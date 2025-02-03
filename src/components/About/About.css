@@ -1,0 +1,211 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 50px 10%;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+  }
+  
+  .about-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff9900;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .skills-grid span {
+    background: #ff9900;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Projects Section */
+  .projects {
+    margin-top: 20px;
+  }
+  
+  .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project h4 {
+    color: #ff9900;
+    font-size: 1.4rem;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  /* Footer Fix */
+  footer {
+    margin-top: auto;
+  }
+  
+
+
+  /* Base styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000;
+    position: relative;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Gradient background with hover effect */
+  .about::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(99, 102, 241, 0.15),
+      rgba(99, 102, 241, 0.05) 40%,
+      transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .about:hover::before {
+    opacity: 1;
+  }
+  
+  /* Add mouse move handler for background effect */
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+  }
+  
+  .about-image img {
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid #ff9900;
+  }
+  
+  .about-content {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #ff6f00;
+  }
+
+  
+  .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .project h4 {
+    color: #ff9900;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #6366f1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .project a:hover {
+    background: #4f46e5;
+  }
+  
+  /* Media query for small screens (1 project per row) */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 project per row on small screens */
+    }
+  }
+  
+    .projects {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* 2 projects per row */
+    gap: 20px; /* Space between grid items */
+    justify-content: center;
+    margin-top: 20px;
+  }

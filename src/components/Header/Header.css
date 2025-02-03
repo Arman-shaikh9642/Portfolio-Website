@@ -1,0 +1,255 @@
+/* Reset some default styles if needed */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navigation styling */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff9900;
+}
+
+/* Auth buttons styling */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn,
+.get-started-btn {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.get-started-btn {
+  background-color: #ff9900;
+  font-weight: bold;
+}
+
+.get-started-btn:hover {
+  background-color: #e68a00;
+}
+#element {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff9900;  /* You can customize the color */
+  margin-top: 20px;
+}
+/* Download Resume Button */
+.resume {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume:hover {
+  background-color: #cc7a00;
+  transform: scale(1.05);
+}
+/* Logo Link Styling */
+.logo-link {
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Optional: make it bold */
+  font-size: 24px; /* Adjust size */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.logo-link:hover {
+  color: #ff9900; /* Change color on hover */
+}
+ 
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Increased gap between links */
+  padding: 20px 0;
+  background: linear-gradient(135deg, #6366f1, #ff6b6b); /* Gradient background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 3px solid #fff; /* White border for separation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Link Styling */
+.nav-link {
+  color: #fff;
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 30px; /* Rounded edges */
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2); /* Subtle white background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Active Link Effect */
+.nav-link:active {
+  color: #6366f1; /* Blue color when clicked */
+  background: #ff6b6b; /* Red background when clicked */
+  transform: scale(1.05); /* Slight scale down effect */
+}
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Matching hero section gradient */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Navbar Styling */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Resume Button Styling */
+.auth-buttons .resume {
+  color: #fff;
+  background-color: #ff9900; /* Matching hero section primary button */
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Resume Hover Effect */
+.auth-buttons .resume:hover {
+  background-color: #ff6b6b; /* Matching hero section hover effect */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Active State for Navigation */
+.nav-link:active {
+  color: #6366f1;
+  background-color: #ff6b6b;
+  transform: scale(1.05);
+}
